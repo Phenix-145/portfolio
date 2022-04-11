@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html id="imagfont">
+  <head>
+    <meta charset="utf-8">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/cv.css">
+  </head>
+  <body>
+    <div class="box">
+      <div id="menu-1">
+        <div id="menup">menu</div>
+          <div id="menu1" style = "display:none;">
+            <a href="index.html" target="_self">accueil</a><br>
+            <a href="#">veille techno</a><br>
+          </div>
+      </div>
+        <div id="center">CV</div>
+    </div>
+    
+    <div class="conteneur">
+      <div class="gauche"><img src="doc/courbe F.png" alt="image" title="" width="100px">
+      </div>
+      <div class="droit">
+          <div class='conteneur'>
+              <div id="présentation">
+                  <h1 id=titre>Mathis Pausé</h1>
+                  <h4> Coordonnées </h4>
+                  Adresse postale : 14 rue Jean Bernier appartement 108, <br> 
+                  59300 Valenciennes <br> 
+                  Adresse email : <a href="mailto:mathis.pause501@gmail.com" target="_blank">mathis.pause501@gmail.com </a><br>
+                  Numéro de téléphone : <a href="tel: 06 76 08 33 72 "> 06 76 08 33 72 </a><br>
+                  Date de naissance : 20/12/2001 <br>
+                  Age : 21 ans <br>
+                  Permis en cours <br>
+                  
+                  </p>
+              </div>
+              <div id="photo"> <img src="doc/photo.png" alt="image" title="photo" >
+              </div>
+          </div>
+          <div>
+              <h2>Expériences Professionnelles</h2>
+              <p>24 mai au 2 juillet 2021 | stage chez H&B informatique développement de programmes applicatifs<br>
+                  11 au 30 juin 2018 |stage à Texam Fourmies dans le service de préparation des commandes <br>
+                  21 au 25 novembre 2016 | stage chez Léo François à Fourmies dans le service de fabrication des pièces <br>
+                  13 au 25 juin 2016 | stage chez AGRATI Fourmies SAS dans le service maintenance
+                  <h2>Formations</h2>
+                  <p>2020 – 2023 | Brevet de Technicien Supérieur Services Informatiques aux Organisations Spécialité SLAM (développeur) <br>
+                      2019 – 2020 | Baccalauréat Technologique STI2D </p>
+              
+                  <h2>Champs de compétences</h2>
+                  <p>Langue Parlée et écrite: <br>
+                      Français et Anglais <br>
+                      Informatique  <br>
+                      
+                      Java, HTML, CSS, python, JQUERY, windev, javascript  <br>
+                      MYSQL, Windows, Linux <br>
+                      <br></p>
+              
+                  <h2>Loisirs</h2>
+                  <p>Dessin, lecture, aquariophilie, jeux vidéo</p>
+          </div>
+          <a href="doc/CV.pdf" download>Ce lien télécharge le fichier PDF</a>
+  </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+
+        $(document).ready(function() {
+            var visible1 = false;
+
+            $('#menu-1').mouseover(function() {               
+                if (visible1 == false){
+                    $("#menu1").css("display", "block");
+                    visible1 = true;
+                }
+            });
+            $('#menu-1').mouseleave(function() {                       
+                if (visible1 == true){
+                    $("#menu1").css("display", "none");
+                    visible1 = false;
+                }
+            });
+        });
+      </script>
+
+  </body>
+</html>
