@@ -88,3 +88,20 @@ h2 {
     display: block;
     width : 100px;
 }
+
+#contact{
+    position: absolute;
+    background-color: rgba(29, 29, 29, 0.781);
+    color: white;
+    width: 100%;
+}
+
+.contact-1{
+    display: flex;
+    width: 100%;
+}
+
+.contact-1 div{
+    width: 50%;
+    text-align: center;
+}

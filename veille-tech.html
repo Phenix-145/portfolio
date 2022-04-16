@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html id="imagfont">
+  <head>
+    <meta charset="utf-8">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/veille-tech.css">
+  </head>
+  <body>
+    <div class="box">
+      <div id="menu-1">
+        <div id="menup">menu</div>
+          <div id="menu1" style = "display:none;">
+            <a href="index.html" target="_self">accueil</a><br>
+            <a href="cv.html">cv</a><br>
+        </div>
+    </div>
+      <div id="center">veille Technologique</div>
+  </div>
+  
+  <div class="bloc">
+    <video id="background-video" autoplay loop muted>
+      <source src="doc/test.mp4" type="video/mp4">
+    </video>
+  </div>
+    <div id="presentation">Mon sujet de veille technologique pour sur les méthodes développées pour entrainer une IA avec peu de données (IA frugale)<br>
+        Le comparé rapidement à la méthode d’entrainement d’IA impliquent les big data <br>
+        Et les solutions pour éviter le sur apprentissage <br>
+        </div>
+        <div id="procedure">procédure utilisé
+            <div id="procedure-0" style = "display:none;">
+                Méthode mise en place alerte Google + recherche via le navigateur 
+            </div>
+        </div>
+
+
+<div class="resume">
+    L'idée consiste à «transférer» le savoir appris grâce au big data à des ensembles de petite taille.<br>
+    «°Des chercheurs indiens ont par exemple utilisé le système entraîné sur la base d'ImageNet pour localiser des reins sur des échographies à partir de seulement quarante-cinq exemples. ».<br>
+    Cette approche permet d’utilisé l'intelligence artificielle dans des domaines où l'on dispose de très peu de données. <br>
+    Le CEA Tech a lui aussi trouvé une méthode d'apprentissage pour entraîner les réseaux de neurones à moindre coût.<br> Le système note les ressemblances entre les objets pour extrapoler ses connaissances. «Avec une banque de données où seules 25% de données sont étiquetées, on parvient à une précision de 89%»<br>
+    Et elle permet aussi d’utilisé moins de ressource et donc d’énergie <br>
+        
+              
+<br>
+    <a href="https://korii.slate.fr/tech/et-si-big-data-etait-finalement-inutile-frugalite-donnees-efficacite-intelligence-artificielle">https://korii.slate.fr/tech/et-si-big-data-etait-finalement-inutile-frugalite-donnees-efficacite-intelligence-artificielle</a>
+</div>
+      
+
+
+  
+  <div class="resume">
+      En créant de nouvelle donnée ou en modifient des donnée existent appelé donnée synthétique
+        qui permet de palé ou manque de donnée
+        
+        <br>
+      <a href="https://www.journaldunet.com/solutions/dsi/1508093-les-synthetic-data-une-cle-pour-entrainer-son-ia-en-toutes-circonstances/">https://www.journaldunet.com/solutions/dsi/1508093-les-synthetic-data-une-cle-pour-entrainer-son-ia-en-toutes-circonstances/</a>
+  </div>
+
+  
+
+<div class="resume">    
+    Une équipe de chercheurs de NVIDIA a publié un article qui décrivant une méthode permettant de diviser par un facteur 20 la quantité de données nécessaires pour entraîner un GAN (Générative Adversarial Network), à performances comparables. <br>
+
+le problème est que avec peu de donnée l’algorithme a tendance faire du sur apprentissage. <br>
+
+La solution traditionnelle est d’augmenter la quantité de donnée, ce qui n’est pas toujours possible.<br>
+
+La méthode proposée, baptisée ADA (Adaptive Discriminator Augmentation) ces qui consiste a suivre l’évolution de la courbe est de la limiter si elle augment trop brutalement ce qui signifie qu’il y a un sur apprentissage.
+<br>
+<a href="https://guillaume-besson.medium.com/entra%C3%AEnement-dun-gan-avec-peu-de-donn%C3%A9es-1248cf36d688">https://guillaume-besson.medium.com/entra%C3%AEnement-dun-gan-avec-peu-de-donn%C3%A9es-1248cf36d688</a>
+
+</div> 
+<div id="contact">contact
+  <div class="contact-1">
+    <div>
+      <a href="mailto: mathis.pause501@gmail.com">Email</a> <br>
+      <a href="tel:06 76 08 33 72">numéro téléphone</a>
+    </div>
+    <div>
+      <a href="https://github.com/Phenix-145" target="_blank">github</a> <br>
+      <a href="https://www.linkedin.com/in/mathis-paus%C3%A9-09450b1b8/" target="_blank">linkedin</a>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+
+        $(document).ready(function() {
+            var visible1 = false;
+
+            $('#menu-1').mouseover(function() {               
+                if (visible1 == false){
+                    $("#menu1").css("display", "block");
+                    visible1 = true;
+                }
+            });
+            $('#menu-1').mouseleave(function() {                       
+                if (visible1 == true){
+                    $("#menu1").css("display", "none");
+                    visible1 = false;
+                }
+            });
+
+
+            
+            $('#procedure').mouseover(function() {               
+                if (visible1 == false){
+                    $("#procedure-0").css("display", "block");
+                    visible1 = true;
+                }
+            });
+            $('#procedure').mouseleave(function() {                       
+                if (visible1 == true){
+                    $("#procedure-0").css("display", "none");
+                    visible1 = false;
+                }
+                $(this).css("color", "#ffffff")
+            });
+        });
+      </script>
+
+  </body>
+</html>
