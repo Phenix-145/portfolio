@@ -85,12 +85,15 @@ p{
 }
 
 #contact{
-    background-color: rgba(29, 29, 29, 0.781);
+    background-color: rgba(0, 0, 0);
     color: white;
     width: 100%;
     position: fixed;
     top: auto;
     bottom: 0px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    padding-bottom: 5px;
 }
 
 .contact-1{
@@ -112,4 +115,5 @@ p{
     border: 1px solid white;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 54px;
 }

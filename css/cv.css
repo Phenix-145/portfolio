@@ -90,9 +90,12 @@ h2 {
 
 #contact{
     position: absolute;
-    background-color: rgba(29, 29, 29, 0.781);
+    background-color: rgba(0, 0, 0);
     color: white;
     width: 100%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    padding-bottom: 5px;
 }
 
 .contact-1{
