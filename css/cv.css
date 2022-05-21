@@ -21,6 +21,7 @@ body{
 #menu-1{
     margin-top: 8px;
     margin-left: 8px;
+    position: absolute;
 }
 
 #menup{
@@ -29,6 +30,7 @@ body{
     border-top: 8px;
     border-left: 8px;
     width: 61px;
+    
 }
 
 
@@ -106,4 +108,16 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .contact-1 div{
     width: 50%;
     text-align: center;
+}
+.bouton{
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    font-size: 16px;
+    color: black;
+}
+
+#menu1 a{
+    text-decoration: none;
 }

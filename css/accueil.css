@@ -48,6 +48,7 @@ body{
 #menu-1{
     margin-top: 8px;
     margin-left: 8px;
+    position: absolute;
 }
 
 #menup{
@@ -116,4 +117,17 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 54px;
+}
+
+.bouton{
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    font-size: 16px;
+    color: black;
+}
+
+#menu1 a{
+    text-decoration: none;
 }

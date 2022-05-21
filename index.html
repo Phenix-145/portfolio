@@ -10,9 +10,9 @@
       <div id="menu-1">
         <div id="menup">menu </div>
           <div id="menu1" style = "display:none;">    
-            <a href="cv.html" target="_self">cv</a><br>
-            <a href="veille-tech.html">veille techno</a><br>
-            <a href=" expérience-pro.html"> expérience pro</a><br>
+            <a href="cv.html"><div class="bouton">cv<br></div></a>
+            <a href="veille-tech.html"><div class="bouton">veille techno<br></div></a>
+            <a href=" expérience-pro.html"><div class="bouton"> expérience pro<br></div></a>
           </div>
       </div>
         <div id="center">Accueil</div> <! -- refaire l'aparence -->
@@ -77,6 +77,13 @@
                     visible1 = false;
                 }
             });
+            $('.bouton').mouseover(function() {     
+                   $(this).css('background-color', '#999999');
+            });
+            $('.bouton').mouseleave(function() {     
+                  $(this).css('background-color', '#ffffff');
+            });
+
         });
       </script>
 
