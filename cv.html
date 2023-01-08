@@ -31,9 +31,16 @@
                   Adresse email : <a href="mailto:mathis.pause501@gmail.com" target="_blank">mathis.pause501@gmail.com </a><br>
                   Numéro de téléphone : <a href="tel: 06 76 08 33 72 "> 06 76 08 33 72 </a><br>
                   Date de naissance : 20/12/2001 <br>
-                  Age : 20 ans <br>
+                  <script>
+                    var dob = new Date("12/20/2001");
+                    var month_diff = Date.now() - dob.getTime();
+                    var age_dt = new Date(month_diff); 
+                    var year = age_dt.getUTCFullYear();
+                    var age = Math.abs(year - 1970);
+                    document.write("Age : " + age + " ans");
+                </script>
+                  <br>
                   Permis en cours <br>
-                  
                   </p>
               </div>
               <div id="photo"> <img src="doc/photo.png" alt="image" title="photo" >
@@ -41,7 +48,8 @@
           </div>
           <div>
               <h2>Expériences Professionnelles</h2>
-              <p>24 mai au 2 juillet 2021 | stage chez H&B informatique développement de programmes applicatifs<br>
+              <p>23 Mai au 1er Juillet 2022 | stage au sein du Service Informatique du Centre Hospitalier de Felleries-Liessies<br>
+                  24 mai au 2 juillet 2021 | stage chez H&B informatique développement de programmes applicatifs<br>
                   11 au 30 juin 2018 |stage à Texam Fourmies dans le service de préparation des commandes <br>
                   21 au 25 novembre 2016 | stage chez Léo François à Fourmies dans le service de fabrication des pièces <br>
                   13 au 25 juin 2016 | stage chez AGRATI Fourmies SAS dans le service maintenance
@@ -54,7 +62,7 @@
                       Français et Anglais <br>
                       Informatique  <br>
                       
-                      Java, HTML, CSS, python, JQUERY, windev, javascript  <br>
+                      Java, HTML, CSS, python, JQUERY, javascript, windev  <br>
                       MYSQL, Windows, Linux <br>
                       <br></p>
               
