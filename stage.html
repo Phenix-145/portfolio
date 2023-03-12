@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html id="imagfont">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio Mathis pausé</title>
+    <link rel="stylesheet" href="css/stage.css">
+    <link rel="stylesheet" href="css/box.css">
+  </head>
+  <body>
+    <div class="box">
+      <div id="menu-1">
+        <div id="menup">menu </div>
+          <div id="menu1" style = "display:none;">
+            <a href="index.html"><div class="bouton">accueil<br></div></a>
+            <a href="cv.html"><div class="bouton">cv<br></div></a>
+            <a href="veille-tech.html"><div class="bouton">veille techno<br></div></a>
+            <a href="Portefeuille de compétences.html"><div class="bouton">Portefeuille de compétences<br></div></a>
+          </div>
+      </div>
+        <div id="center">Stage</div>
+    </div>
+
+    <div class="bloc">
+      <video id="background-video" autoplay loop muted>
+        <source src="doc/test.mp4" type="video/mp4">
+      </video>
+    </div>
+    
+    <div id="présentation">
+      <div class="titre">
+        <p>Stage de Première Année<p>
+          <div class="note">
+            Mon stage de Première Année s’est déroulé au sein du Service Informatique du Centre Hospitalier de Felleries-Liessies <br>
+            Ma mission a eu pour objectif de créer un nouveau site intranet administrable et sécurisé afin de remplacer l’ancien site. 
+            </div>
+            <div id="lien">
+              <a class="bouton" href="doc/Rapport de Stage 1er année.pdf" download target="_blank">Rapport du Stage</a>
+            </div>
+      </div>
+      <div class="titre">
+        <p>Stage de Deuxième Année</p>
+        <div class="note">
+          Mon stage de Deuxième Année s’est déroulé au sein de la SARL H&B Informatique Hirson. <br>
+          J'ai été sur trois projets différents : <br>
+          Au début du stage, j'ai été mis en binôme avec un autre stagiaire sur une application pour gérer des tournois. <button id="myBtn1">voir ici</button><br>
+          Ensuite mon tuteur m'a demandé de faire une application qui utilise le service de paiement payfit. <button id="myBtn2">voir ici</button><br>
+          Et enfin j'ai réalisé un programme pour utiliser l’api de paypal dans webdev.
+        </div>
+        <div id="lien">
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="box1" class="modal">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <br><br>
+        </div>
+        <div class="modal-body">
+          <p>capture d'écran du projet</p>
+          <img src="doc/cap/cap1/Capture1.png"><br>
+          <img src="doc/cap/cap1/Capture2.png"><br>
+          <img src="doc/cap/cap1/Capture3.png"><br>
+          <img src="doc/cap/cap1/Capture4.png"><br>
+          <div id="lien">
+            télécharger l'application <a class="bouton" href="https://mega.nz/file/f5M1HDSL#1jg1zLdP6QFaEQs9tnZ3MELDg5pkmFDNXKxj8OGxADI" download target="_blank">ici</a>
+          </div>
+        </div>
+      </div>
+    </div>>
+
+    <div id="box2" class="modal">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <br><br>
+        </div>
+        <div class="modal-body">
+          <p>capture d'écran du projet</p>
+          <img src="doc/cap/cap2/Capture1.png"><br>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">contact
+      <div class="contact-1">
+        <div>
+          <a>Email : mathis.pause501@gmail.com</a> <br>
+          <a>téléphone : 06 76 08 33 72</a> 
+        </div>
+        <div>
+          <a href="https://github.com/Phenix-145" target="_blank">github</a> <br>
+          <a href="https://www.linkedin.com/in/mathis-paus%C3%A9-09450b1b8/" target="_blank">linkedin</a>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+
+          var modal
+          var btn1 = document.getElementById("myBtn1");
+          var btn2 = document.getElementById("myBtn2");
+
+          var span1 = document.getElementsByClassName("close")[0];
+          var span2 = document.getElementsByClassName("close")[1];
+
+          // When the user clicks the button, open the modal 
+          btn1.onclick = function() {
+            modal = document.getElementById("box1");
+            modal.style.display = "block";
+          }
+
+          btn2.onclick = function() {
+            modal = document.getElementById("box2");
+            modal.style.display = "block";
+          }
+
+          // When the user clicks on <span> (x), close the modal
+          span1.onclick = function() {
+            modal.style.display = "none";
+          }
+
+          span2.onclick = function() {
+            modal.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+
+
+        $(document).ready(function() {
+            var visible1 = false;
+
+            $('#menu-1').mouseover(function() {               
+                if (visible1 == false){
+                    $("#menu1").css("display", "block");
+                    visible1 = true;
+                }
+            });
+            $('#menu-1').mouseleave(function() {                       
+                if (visible1 == true){
+                    $("#menu1").css("display", "none");
+                    visible1 = false;
+                }
+            });
+            $('.bouton').mouseover(function() {     
+                   $(this).css('background-color', '#999999');
+            });
+            $('.bouton').mouseleave(function() {     
+                  $(this).css('background-color', '#ffffff');
+            });
+        });
+      </script>
+
+  </body>
+</html>

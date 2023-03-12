@@ -131,3 +131,14 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 #menu1 a{
     text-decoration: none;
 }
+#photo {
+    display: block;
+    width : 25%;
+}
+.conteneur {
+    display: flex;
+}
+#photox{
+    width: 50%;
+    margin-left: 25%;
+}
