@@ -55,6 +55,9 @@ body{
     width: 70%;
     margin-left: 15%;
     color: white;
+    padding-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255, 255, 255);
 }
 .bloc video{
     width: 100%;
@@ -138,4 +141,9 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 .lien{
     font-size: 12px;
+}
+
+#lien{
+    display: flex;
+    justify-content: space-around;
 }
