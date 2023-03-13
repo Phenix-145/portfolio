@@ -51,7 +51,7 @@ body{
 
 #menup{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 1.75vw;
     border-top: 8px;
     border-left: 8px;
     width: 61px;
@@ -61,20 +61,21 @@ body{
 #center{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size:  2.8vw;
     margin-top: 40px;
     margin-bottom: 20px;
     margin-right: 25%;
     width: 50%;
     margin-left: auto;
     float: right;
+    font-weight: bolder;
 }
 
 
 
 #présentation{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
+    font-size: 2.1vw;
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -90,7 +91,7 @@ body{
     margin-left: 20%;
     margin-right: 20%;
     color: white;
-    font-size: 15px;
+    font-size: 1.3vw;
     text-align: left;
 }
 
@@ -105,7 +106,10 @@ p{
     width: 100%;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
-    padding-bottom: 5px;
+    padding-bottom: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0.5vw
 }
 
 .contact-1{
@@ -131,11 +135,16 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
 
-#lien a{
+#ressource a{
     text-decoration: none;
 }
 
-#lien{
+#ressource{
     text-align: right;
     margin-bottom: 10px;
+}
+*
+#lien{
+    display: flex;
+    justify-content: space-around;
 }
