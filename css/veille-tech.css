@@ -49,12 +49,12 @@ body{
     text-align: left;
     font-size: 15px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     margin-right: 25%;
+    background-color: black;
     width: 70%;
-    border: 5px double rgba(0, 0, 0, 0.507);
-    background-color: white;
     margin-left: 15%;
+    color: white;
 }
 .bloc video{
     width: 100%;
