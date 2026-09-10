@@ -8,7 +8,7 @@
     
 }
 body{
-    margin: 0vw;
+    margin: 0px;
 }
 
 .box{
@@ -18,21 +18,6 @@ body{
 }
 
 
-#menu-1{
-    margin-top: 8px;
-    margin-left: 8px;
-    position: absolute;
-}
-
-#menup{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.75vw;
-    border-top: 8px;
-    border-left: 8px;
-    width: 61px;
-    
-}
-
 
 #présentation{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -41,35 +26,14 @@ body{
     width:43%;
 }
 
-.conteneur {
-    display: flex;
-}
 
 #titre {
     background-color: rgb(196, 196, 196);
     
 }
 
-h2 {
-    text-decoration: underline blue;
-}
 
-.gauche {
-    padding-left: 75px;
-    padding-right: 2px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 25%;
-     
-}
 
-.droit {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 75%;
-}
 
 #photo {
     margin-left: auto;
@@ -107,11 +71,90 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
 
-#menu1 a{
-    text-decoration: none;
-}
-
 #lien{
     display: flex;
     justify-content: space-around;
+}
+
+.cv-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cv-left {
+    background: #F0F5F8;
+    padding: 30px 25px;
+}
+
+.cv-right {
+    padding: 30px;
+}
+
+.cv-container h2 {
+    color: #17365D;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #17365D;
+    padding-bottom: 5px;
+}
+
+.cv-container h3 {
+    color: #17365D;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.cv-container p {
+    line-height: 1.4;
+    margin: 8px 0;
+}
+
+.cv-container ul {
+    padding-left: 20px;
+}
+
+.cv-container li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.date {
+    color: #5A5A5A;
+    font-style: italic;
+}
+
+.technologies {
+    color: #2E75B5;
+    font-weight: 500;
+}
+
+.photo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo img {
+    width: 78px;
+    height: 110px;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cv-left,
+    .cv-right {
+        padding: 20px;
+    }
+}
+
+.text_centre {
+    text-align: center;
 }

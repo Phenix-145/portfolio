@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html id="imagfont">
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolio Mathis pausé</title>
-    <link rel="stylesheet" href="css/accueil.css">
-    <link rel="stylesheet" href="css/general.css">
-  </head>
-  <body>
-    <div class="box">
-      <div id="menu-1">
-        <div id="menup">Menu </div>
-          <div id="menu1" style = "display:none;">    
-            <a href="cv.html"><div class="bouton">CV<br></div></a>
-            <a href="veille-tech.html"><div class="bouton">Veille techno<br></div></a>
-            <a href=" stage.html"><div class="bouton">Stage<br></div></a>
-            <a href="Grille de compétences.html"><div class="bouton">Grille de compétences<br></div></a>
-          </div>
-      </div>
-        <div id="center">Accueil</div>
-    </div>
 
-    <div class="bloc">
-      <video id="background-video" autoplay loop muted>
-        <source src="doc/test.mp4" type="video/mp4">
-      </video>
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio Mathis pausé</title>
+  <link rel="stylesheet" href="css/accueil.css">
+  <link rel="stylesheet" href="css/general.css">
+</head>
+
+<body>
+  <div class="box">
+    <div id="menu-1">
+      <!-- Menu PC -->
+      <div id="menup">Menu </div>
+      <div id="menu1" style="display:none;">
+        <a href="cv.html">
+          <div class="bouton">CV</div>
+        </a>
+        <a href="veille-tech.html">
+          <div class="bouton">Veille techno</div>
+        </a>
+        <a href=" stage.html">
+          <div class="bouton">Stage</div>
+        </a>
+        <!-- <a href="Grille de compétences.html">
+          <div class="bouton">Grille de compétences</div>
+        </a> -->
+      </div>
     </div>
-    <div class="conteneur">
+    <!-- Menu téléphone -->
+    <div id="menu-2">
+      <a href="cv.html">CV</a> //
+      <a href="veille-tech.html">Veille techno</a> //
+      <a href=" stage.html">Stage</a> 
+      <!-- <a href="Grille de compétences.html">Grille de compétences</a> -->
+    </div>
+    <div id="center">Accueil</div>
+  </div>
+
+  <div class="bloc">
+    <video id="background-video" autoplay loop muted>
+      <source src="doc/test.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="conteneur">
     <div id="présentation">
       <p>
-        Je m’appelle Mathis Pausé, j’ai 
+        Je m’appelle Mathis Pausé, j’ai
         <script>
           var dob = new Date("12/20/2001");
           var month_diff = Date.now() - dob.getTime();
-          var age_dt = new Date(month_diff); 
+          var age_dt = new Date(month_diff);
           var year = age_dt.getUTCFullYear();
           var age = Math.abs(year - 1970);
-          document.write(age );</script> ans et je suis actuellement en 2ème année de BTS SIO (Services informatiques aux organisations), en spécialité SLAM (solutions logicielles et applications métier).<br>
-           Et je souhaiterais faire un bachelor informatique au Lycée Dampierre.
-      </p>
-      <p>
-        J'ai choisi l'option SLAM car je porte un plus grand intérêt pour le développement, la création d'applications et de pages web ainsi que la maintenance de programmes applicatifs.
+          document.write(age);</script> ans et Titulaire d'une Licence professionnelle Développement web et mobile et
+        d'un BTS SIO spécialité SLAM, avec des expériences en développement web, mobile et applicatif. Recherche un
+        premier poste en développement web ou logiciel.
       </p>
       <br>
     </div>
-  <div id="photo"> <img id="photox" src="doc/photo.png" alt="image" title="photo" >
+    <div id="photo"> <img id="photox" src="doc/photo.png" alt="image" title="photo">
+    </div>
   </div>
-</div>
-    <!--<div id="competence">
+  <!--<div id="competence">
       <p>compétences acquises en</p>
       <p>java,
         HTML/CSS,
@@ -55,48 +71,51 @@
         javascript
       </p>
     </div>-->
-    <br>
-    <div id="contact">
-      <div class="contact-1">
-        <div>
-          <a>Email : mathis.pause501@gmail.com</a> <br>
-          <a>téléphone : 06 76 08 33 72</a>
-        </div>
-        <div id="lien">
-          <a href="https://github.com/Phenix-145" target="_blank"><img id="github" src="doc/github.png"  title="github"></a>
-          <a href="https://www.linkedin.com/in/mathis-paus%C3%A9-09450b1b8/" target="_blank"><img src="doc/linkedin.png"  title="linkedin"></a>
-        </div>
+  <br>
+  <div id="contact">
+    <div class="contact-1">
+      <div>
+        <a>Email : mathis.pause501@gmail.com</a> <br>
+        <a>téléphone : 06 76 08 33 72</a>
+      </div>
+      <div id="lien">
+        <a href="https://github.com/Phenix-145" target="_blank"><img id="github" src="doc/github.png"
+            title="github"></a>
+        <a href="https://www.linkedin.com/in/mathis-paus%C3%A9-09450b1b8/" target="_blank"><img src="doc/linkedin.png"
+            title="linkedin"></a>
       </div>
     </div>
+  </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script type="text/javascript">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript">
 
-        $(document).ready(function() {
-            var visible1 = false;
+    $(document).ready(function () {
+      var visible1 = false;
 
-            $('#menu-1').mouseover(function() {               
-                if (visible1 == false){
-                    $("#menu1").css("display", "block");
-                    visible1 = true;
-                }
-            });
-            $('#menu-1').mouseleave(function() {                       
-                if (visible1 == true){
-                    $("#menu1").css("display", "none");
-                    visible1 = false;
-                }
-            });
-            $('.bouton').mouseover(function() {     
-                   $(this).css('background-color', '#999999');
-            });
-            $('.bouton').mouseleave(function() {     
-                  $(this).css('background-color', '#ffffff');
-            });
+      $('#menu-1').mouseover(function () {
+        if (visible1 == false) {
+          $("#menu1").css("display", "block");
+          visible1 = true;
+        }
+      });
+      $('#menu-1').mouseleave(function () {
+        if (visible1 == true) {
+          $("#menu1").css("display", "none");
+          visible1 = false;
+        }
+      });
+      $('.bouton').mouseover(function () {
+        $(this).css('background-color', '#999999');
+      });
+      $('.bouton').mouseleave(function () {
+        $(this).css('background-color', '#ffffff');
+      });
 
-        });
-      </script>
+    });
+  </script>
 
-  </body>
+</body>
+
 </html>

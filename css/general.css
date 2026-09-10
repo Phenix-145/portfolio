@@ -1,12 +1,12 @@
-#github{
+#github {
     width: 2.4vw;
 }
 
 
-#center{
+#center {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 2.8vw;
+    font-size: 40px;
     margin-top: 40px;
     margin-bottom: 20px;
     margin-right: 25%;
@@ -15,4 +15,86 @@
     float: right;
     font-weight: bolder;
     -webkit-text-stroke: 2px black;
+}
+
+#menu-2 {
+    display: none;
+}
+
+/* =========================
+   MENU PC
+   ========================= */
+#menu1 a {
+    text-decoration: none;
+}
+
+#menu-1 {
+    margin-top: 8px;
+    margin-left: 8px;
+    position: absolute;
+}
+
+#menup {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 21px;
+    border-top: 8px;
+    border-left: 8px;
+    width: 61px;
+}
+
+.bouton {
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    font-size: 16px;
+    color: black;
+}
+
+/* =========================
+   TÉLÉPHONE
+   ========================= */
+
+@media screen and (max-width: 600px) {
+
+    /* On cache le menu PC */
+    #menu-1 {
+        display: none;
+    }
+
+    /* On affiche le menu téléphone */
+    #menu-2 {
+        display: block;
+        text-align: left;
+        padding: 10px;
+    }
+
+    #menu-2 a {
+        color: white;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+    }
+
+    #center {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 25px;
+        margin-top: -2px;
+        margin-bottom: 20px;
+        margin-right: 25%;
+        width: 50%;
+        margin-left: auto;
+        float: right;
+        font-weight: bolder;
+        -webkit-text-stroke: 0px;
+    }
+
+    .box {
+        display: flex;
+        color: white;
+        border-bottom: 70px;
+        flex-direction: column;
+
+    }
 }

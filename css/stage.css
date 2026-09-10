@@ -1,37 +1,38 @@
-.bloc video{
+.bloc video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position:fixed;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index:-100;
+    z-index: -100;
 }
 
-.bloc::before{
-    width: 100%;
-    height: 100%;
+.bloc::before {
     content: "";
-    position:fixed;
+    background-color: #000000ff;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000000F2;
     z-index: -50;
-    object-fit: cover;
+    overflow: hidden;
 }
 
-.box{
+.box {
     background-image: url('../doc/ruban.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     z-index: -5;
-    
+
 }
 
-body{
+body {
     margin: 0px;
 }
 
@@ -43,71 +44,57 @@ body{
 }
 
 
-#menu-1{
-    margin-top: 8px;
-    margin-left: 8px;
-    position: absolute;
-}
-
-#menup{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.75vw;
-    border-top: 8px;
-    border-left: 8px;
-    width: 61px;
-}
 
 
 
-#présentation{
+#présentation {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.1vw;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color:#000000e1;
+    background-color: #000000e1;
     margin-bottom: 30px;
 }
-.titre{
+
+.titre {
+    font-size: 22px;
     border-bottom-style: solid;
     border-bottom-color: rgb(255, 255, 255);
 }
 
-.note{
+.note {
     margin-left: 20%;
     margin-right: 20%;
     color: white;
-    font-size: 1.3vw;
+    font-size: 15px;
     text-align: left;
 }
 
-p{
+p {
     color: white;
 }
 
-#contact{
+#contact {
     position: absolute;
     background-color: rgba(0, 0, 0);
     color: white;
     width: 100%;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     padding-bottom: 0;
     margin-bottom: 0;
     padding-top: 0.5vw
 }
 
-.contact-1{
+.contact-1 {
     display: flex;
     width: 100%;
 }
 
-.contact-1 div{
+.contact-1 div {
     width: 50%;
     text-align: center;
 }
 
-.bouton{
+.bouton {
     text-align: center;
     border: 1px solid black;
     background-color: rgb(255, 255, 255);
@@ -116,20 +103,33 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
 
-#menu1 a{
+#menu1 a {
     text-decoration: none;
 }
 
-#ressource a{
+#ressource a {
     text-decoration: none;
 }
 
-#ressource{
+#ressource {
     text-align: right;
     margin-bottom: 10px;
 }
-*
-#lien{
+
+* #lien {
     display: flex;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    .note {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #présentation {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
 }

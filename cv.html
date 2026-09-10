@@ -1,121 +1,326 @@
 <!DOCTYPE html>
 <html id="imagfont">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Portfolio Mathis pausé</title>
-    <link rel="stylesheet" href="css/cv.css">
     <link rel="stylesheet" href="css/general.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/cv.css">
+</head>
+
+<body>
     <div class="box">
-      <div id="menu-1">
-        <div id="menup">Menu</div>
-          <div id="menu1" style = "display:none;">
-            <a href="index.html"><div class="bouton">Accueil<br></div></a>
-            <a href="veille-tech.html"><div class="bouton">Veille techno<br></div></a>
-            <a href=" stage.html"><div class="bouton">Stage<br></div></a>
-            <a href="Grille de compétences.html"><div class="bouton">Grille de compétences<br></div></a>
-          </div>
-      </div>
+        <div id="menu-1">
+            <!-- Menu PC -->
+            <div id="menup">Menu</div>
+            <div id="menu1" style="display:none;">
+                <a href="index.html">
+                    <div class="bouton">Accueil<br></div>
+                </a>
+                <a href="veille-tech.html">
+                    <div class="bouton">Veille techno<br></div>
+                </a>
+                <a href=" stage.html">
+                    <div class="bouton">Stage<br></div>
+                </a>
+                <!-- <a href="Grille de compétences.html">
+                    <div class="bouton">Grille de compétences<br></div>
+                </a> -->
+            </div>
+        </div>
+        <!-- Menu téléphone -->
+        <div id="menu-2">
+            <a href="index.html">Accueil</a> //
+            <a href="veille-tech.html">Veille techno</a> //
+            <a href=" stage.html">Stage</a> 
+            <!-- <a href="Grille de compétences.html">Grille de compétences</a> -->
+        </div>
         <div id="center">CV</div>
     </div>
-    
-    <div class="conteneur">
-      <div class="gauche"><img src="doc/courbe F.png" alt="image" title="" width="100px">
-      </div>
-      <div class="droit">
-          <div class='conteneur'>
-              <div id="présentation">
-                  <h1 id=titre>Mathis Pausé</h1>
-                  <h4> Coordonnées </h4>
-                  Adresse postale : 14 rue Jean Bernier appartement 108, <br> 
-                  59300 Valenciennes <br> 
-                  Adresse email : <a href="mailto:mathis.pause501@gmail.com" target="_blank">mathis.pause501@gmail.com </a><br>
-                  Numéro de téléphone : <a href="tel: 06 76 08 33 72 "> 06 76 08 33 72 </a><br>
-                  Date de naissance : 20/12/2001 <br>
-                  <script>
+
+    <body lang=FR style='word-wrap:break-word'>
+
+        <div class=WordSection1>
+
+            <h1 class="text_centre"><span style='color:#17365D'>Mathis Pausé</span></h1>
+
+            <h2 class="text_centre"><span style='color:#2E75B5'>DéVELOPPEUR WEB & APPLICATIF JUNIOR</span></h2>
+
+            <h3 class="text_centre">PHP • Symfony • JavaScript • React • Vue.js • MySQL</h3>
+
+            <p class="text_centre">
+                <script>
                     var dob = new Date("12/20/2001");
                     var month_diff = Date.now() - dob.getTime();
-                    var age_dt = new Date(month_diff); 
+                    var age_dt = new Date(month_diff);
                     var year = age_dt.getUTCFullYear();
                     var age = Math.abs(year - 1970);
-                    document.write("Age : " + age + " ans");
+                    document.write("Age : " + age + " ans"); 
                 </script>
-                  <br>
-                  Permis en cours <br>
-                  </p>
-              </div>
-              <div id="photo"> <img src="doc/photo.png" alt="image" title="photo" >
-              </div>
-          </div>
-          <div>
-              <h2>Expériences Professionnelles</h2>
-              <p>
-                  9 janvier au 3 février 2023 | stage chez H&B informatique développement de programmes applicatifs<br>
-                  23 Mai au 1er Juillet 2022 | stage au sein du Service Informatique du Centre Hospitalier de Felleries-Liessies<br>
-                  24 mai au 2 juillet 2021 | stage chez H&B informatique développement de programmes applicatifs<br>
-                  11 au 30 juin 2018 |stage à Texam Fourmies dans le service de préparation des commandes <br>
-                  21 au 25 novembre 2016 | stage chez Léo François à Fourmies dans le service de fabrication des pièces <br>
-                  13 au 25 juin 2016 | stage chez AGRATI Fourmies SAS dans le service maintenance
-                  <h2>Formations</h2>
-                  <p>2020 – 2023 | Brevet de Technicien Supérieur Services Informatiques aux Organisations Spécialité SLAM (développeur) <br>
-                      2019 – 2020 | Baccalauréat Technologique STI2D </p>
-              
-                  <h2>Champs de compétences</h2>
-                  <p>Langue Parlée et écrite: <br>
-                      Français et Anglais <br>
-                      Informatique  <br>
-                      
-                      Java, HTML, CSS, python, JQUERY, javascript, windev  <br>
-                      MYSQL, Windows, Linux <br>
-                      <br></p>
-              
-                  <h2>Loisirs</h2>
-                  <p>Dessin, lecture, aquariophilie, jeux vidéo</p>
-          </div>
-          <a href="doc/CV.pdf"  target="_blank">télécharger le fichier en PDF</a>
-  </div></div>
+                | Permis B | 231 B Rue de Lille, 59650 VILLENEUVE-D'ASCQ
+            </p>
+
+            <div class="cv-container">
+
+                <!-- COLONNE GAUCHE -->
+                <div class="cv-left">
+
+                    <div class="photo">
+                        <img src="doc/photo.png" alt="Photo">
+                    </div>
+
+                    <section>
+                        <h2>PROFIL</h2>
+                        <p>
+                            Titulaire d'une Licence professionnelle Développement web et mobile
+                            et d'un BTS SIO spécialité SLAM, avec des expériences en développement
+                            web, mobile et applicatif.
+                        </p>
+                        <p>
+                            Recherche un premier poste en développement web ou logiciel.
+                            Rigueur, persévérance et goût pour les tâches structurées.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>COMPéTENCES TECHNIQUES</h2>
+
+                        <p>
+                            <strong>Back-end :</strong> PHP, Symfony
+                            <strong>Front-end :</strong> JavaScript, HTML5, CSS3, React, Vue.js
+                        </p>
+
+                        <p>
+                            <strong>Mobile / applicatif :</strong>
+                            Kotlin, Java, Flutter, WinDev
+                        </p>
+
+                        <p>
+                            <strong>Autres langages :</strong> Python, C
+                            <strong>Base de données :</strong> MySQL
+                            <strong>Outils :</strong> Git, GitHub
+                            <strong>Systèmes :</strong> Windows, Linux
+                            <strong>API :</strong> Google Maps, PayFit
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>FORMATION</h2>
+
+                        <p><strong>2024 – 2025</strong></p>
+                        <p>L2 Informatique – UPHF</p>
+
+                        <p><strong>2023 – 2024</strong></p>
+                        <p>Licence professionnelle Développement web et mobile – UPHF</p>
+
+                        <p><strong>2020 – 2023</strong></p>
+                        <p>BTS SIO – spécialité SLAM</p>
+
+                        <p><strong>2019 – 2020</strong></p>
+                        <p>Baccalauréat technologique STI2D</p>
+                    </section>
+
+                    <section>
+                        <h2>LANGUE</h2>
+
+                        <p><strong>Anglais technique</strong></p>
+                        <p>
+                            Compréhension de documentations et ressources informatiques.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>CENTRES D'INTéRÊT</h2>
+
+                        <p>
+                            Aquariophilie • Dessin • Escalade • Jeux vidéo
+                        </p>
+                    </section>
+
+                </div>
 
 
-  <div id="contact">
-    <div class="contact-1">
-      <div>
-        <a>Email : mathis.pause501@gmail.com</a> <br>
-          <a>téléphone : 06 76 08 33 72</a>
-      </div>
-      <div id="lien">
-        <a href="https://github.com/Phenix-145" target="_blank"><img id="github" src="doc/github.png"  title="github"></a>
-          <a href="https://www.linkedin.com/in/mathis-paus%C3%A9-09450b1b8/" target="_blank"><img src="doc/linkedin.png"  title="linkedin"></a>
-      </div>
-    </div>
-  </div>
+                <!-- COLONNE DROITE -->
+                <div class="cv-right">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                    <section>
+                        <h2>EXPéRIENCES & RéALISATIONS TECHNIQUES</h2>
+
+                        <article class="experience">
+                            <h3>Proxiad — Développeur web stagiaire</h3>
+                            <span class="date">Avril – juillet 2024</span>
+
+                            <p>
+                                <strong>Projet :</strong>
+                                Interface web de consultation et de visualisation de statistiques
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Développement d'une page web de consultation et visualisation de statistiques.
+                                </li>
+                                <li>
+                                    Participation aux développements front-end et back-end.
+                                </li>
+                                <li>
+                                    Récupération, traitement et affichage des données issues d'une base MySQL.
+                                </li>
+                                <li>
+                                    Réalisation de l'interface avec Flutter Web.
+                                </li>
+                            </ul>
+
+                            <p>
+                                <strong>Technologies :</strong>
+                                <span class="technologies">Flutter Web • MySQL</span>
+                            </p>
+                        </article>
+
+
+                        <article class="experience">
+                            <h3>H&B Informatique — Développeur applicatif stagiaire</h3>
+                            <span class="date">Janvier – février 2023</span>
+
+                            <p>
+                                <strong>Projet :</strong>
+                                Application de gestion de tournois
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Développement de fonctionnalités de création, modification et suivi des tournois.
+                                </li>
+                                <li>
+                                    Développement d'un script de gestion des paiements.
+                                </li>
+                                <li>
+                                    Intégration de l'API PayFit.
+                                </li>
+                            </ul>
+
+                            <p>
+                                <strong>Technologies :</strong>
+                                <span class="technologies">WinDev • API PayFit</span>
+                            </p>
+                        </article>
+
+
+                        <article class="experience">
+                            <h3>
+                                Centre Hospitalier de Felleries-Liessies —
+                                Développeur web stagiaire
+                            </h3>
+                            <span class="date">Mai – juillet 2022</span>
+
+                            <p>
+                                <strong>Projet :</strong>
+                                Maquette d'un site intranet pour l'établissement
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Réalisation des interfaces front-end et des fonctionnalités back-end.
+                                </li>
+                                <li>
+                                    Conception de pages et formulaires adaptés aux besoins des utilisateurs.
+                                </li>
+                                <li>
+                                    Gestion et consultation des données depuis une base MySQL.
+                                </li>
+                            </ul>
+
+                            <p>
+                                <strong>Technologies :</strong>
+                                <span class="technologies">PHP • HTML • CSS • MySQL</span>
+                            </p>
+                        </article>
+
+
+                        <article class="experience">
+                            <h3>H&B Informatique — Développeur d'application mobile stagiaire</h3>
+                            <span class="date">Mai – juillet 2021</span>
+                            <p>
+                                <strong>Projet :</strong>
+                                Application de création et d'optimisation de circuits de livraison
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Création de circuits de livraison à partir de plusieurs adresses.
+                                </li>
+                                <li>
+                                    Intégration de Google Maps pour localiser les adresses et afficher les itinéraires.
+                                </li>
+                                <li>
+                                    Gestion des données clients et des points de livraison.
+                                </li>
+                            </ul>
+
+                            <p>
+                                <strong>Technologies :</strong>
+                                <span class="technologies">WinDev • API Google Maps</span>
+                            </p>
+                        </article>
+
+                    </section>
+
+
+                    <section>
+                        <h2>PROJETS / GITHUB</h2>
+
+                        <p>
+                            <i>Portfolio / GitHub : (en cours)</i>
+                        </p>
+                    </section>
+
+                </div>
+
+            </div>
+            <a href="doc/CV.pdf" target="_blank">télécharger le fichier en PDF</a>
+        </div>
+
+        <div id="contact">
+            <div class="contact-1">
+                <div>
+                    <a>Email : mathis.pause501@gmail.com</a> <br>
+                    <a>téléphone : 06 76 08 33 72</a>
+                </div>
+                <div id="lien">
+                    <a href="https://github.com/Phenix-145" target="_blank"><img id="github" src="doc/github.png"
+                            title="github"></a>
+                    <a href="https://www.linkedin.com/in/mathis-paus%C3%A9-09450b1b8/" target="_blank"><img
+                            src="doc/linkedin.png" title="linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript">
 
-        $(document).ready(function() {
-            var visible1 = false;
+            $(document).ready(function () {
+                var visible1 = false;
 
-            $('#menu-1').mouseover(function() {               
-                if (visible1 == false){
-                    $("#menu1").css("display", "block");
-                    visible1 = true;
-                }
+                $('#menu-1').mouseover(function () {
+                    if (visible1 == false) {
+                        $("#menu1").css("display", "block");
+                        visible1 = true;
+                    }
+                });
+                $('#menu-1').mouseleave(function () {
+                    if (visible1 == true) {
+                        $("#menu1").css("display", "none");
+                        visible1 = false;
+                    }
+                });
+                $('.bouton').mouseover(function () {
+                    $(this).css('background-color', '#999999');
+                });
+                $('.bouton').mouseleave(function () {
+                    $(this).css('background-color', '#ffffff');
+                });
             });
-            $('#menu-1').mouseleave(function() {                       
-                if (visible1 == true){
-                    $("#menu1").css("display", "none");
-                    visible1 = false;
-                }
-            });
-            $('.bouton').mouseover(function() {     
-                   $(this).css('background-color', '#999999');
-            });
-            $('.bouton').mouseleave(function() {     
-                  $(this).css('background-color', '#ffffff');
-            });
-        });
-      </script>
+        </script>
 
-  </body>
+    </body>
+
 </html>
