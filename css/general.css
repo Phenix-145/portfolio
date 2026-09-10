@@ -55,7 +55,7 @@
    TÉLÉPHONE
    ========================= */
 
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {
 
     /* On cache le menu PC */
     #menu-1 {
